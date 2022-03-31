@@ -1,0 +1,23 @@
+@import url("../fonts/font-face.css");
+
+html, body, span , div, h1, h2, h3, h4, h5, h6, select, input, button, a {
+    font-family: 'Comfortaa';
+}
+
+a {
+    opacity: 1 !important;
+    color: #000;
+}
+
+html, body {
+    background: whitesmoke;
+    position: relative;
+    overflow-x: hidden;
+    background: url(../images/background-patern.png);
+}
+
+.main.container {
+    width: 1280px;
+    background: #fff;
+}
+

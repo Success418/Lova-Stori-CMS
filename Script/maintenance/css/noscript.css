@@ -1,0 +1,27 @@
+/*
+	Design by Bian Dinnurjand
+	bian.id | @mybianid
+	Webiste ini di design oleh Bian Dinnurjand dengan versi 6.0 lisensi (bian.id)
+*/
+
+/* Header */
+
+	body.is-preload #header .content {
+		-moz-transform: none;
+		-webkit-transform: none;
+		-ms-transform: none;
+		transform: none;
+		opacity: 1;
+	}
+
+	body.is-preload #header .image {
+		-moz-transform: none;
+		-webkit-transform: none;
+		-ms-transform: none;
+		transform: none;
+		opacity: 1;
+	}
+
+		body.is-preload #header .image img {
+			opacity: 1;
+		}

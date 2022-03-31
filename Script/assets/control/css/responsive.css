@@ -1,0 +1,91 @@
+@media (max-width: 767px) {
+  #posts {
+    padding: 1rem !important;
+  }
+  #similar-posts .image {
+    max-height: initial !important;
+  }
+}
+@media (max-width: 750px) {
+  #posts {
+    padding: 1rem !important;
+  }
+  #posts .masonry.grid {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
+  .footer .right.menu {
+    display: none !important;
+  }
+  .ui.modal > .header, .ui.modal > .actions {
+    padding: 1.5rem 2rem !important;
+  }
+  .sm-hidden {
+    display: none !important;
+  }
+}
+@media (min-width: 751px) {
+  .masonry.grid {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+  }
+  .ui.grid > [class*="three column"].doubling.row.row > .column, .ui[class*="three column"].doubling.grid > .column:not(.row), .ui[class*="three column"].doubling.grid > .row > .column {
+    width: initial !important;
+  }
+}
+@media (min-width: 511px) {
+  .xs-up-hidden {
+    display: none;
+  }
+}
+@media (max-width: 510px) {
+  #posts .masonry.grid {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+  }
+  .xs-hidden, #random-posts .floating-content {
+    display: none !important;
+  }
+  .p-xs-0 {
+    padding: 0 !important;
+  }
+  #user-forms-buttons {
+    display: block;
+  }
+  #pagination {
+    text-align: center !important;
+  }
+}
+@media (max-width: 400px) {
+  #posts-filter .header {
+    display: none;
+  }
+  #posts-filter .right.menu {
+    margin: auto;
+  }
+  #social-buttons button span {
+    display: none;
+  }
+  #social-buttons button i {
+    margin: 0 !important;
+  }
+  .modal {
+    width: 300px;
+  }
+  #post .attributes {
+    overflow-x: auto !important;
+  }
+}
+@media (min-width: 1840px) {
+  .ui.column.grid > [class*="sixteen wide"].column, .ui.grid > .column.row > [class*="sixteen wide"].column, .ui.grid > .row > [class*="sixteen wide"].column, .ui.grid > [class*="sixteen wide"].column {
+    max-width: 75% !important;
+  }
+}
+@media (min-width: 1200px) {
+  #mobile-menu-toggler {
+    display: none;
+  }
+}

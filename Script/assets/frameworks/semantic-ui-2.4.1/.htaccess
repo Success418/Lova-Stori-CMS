@@ -1,0 +1,224 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+#Mencegah Hot Linking
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?mediatizen.com [NC]
+RewriteRule \.(jpg|jpeg|png|gif)$ - [NC,F,L]
+#Blok Bad Bots – Ini adalah contoh beberapa bot yang diblok. Anda bisa menambahkan bot lainnya.
+RewriteCond %{HTTP_USER_AGENT} ^WebBandit [OR]
+RewriteCond %{HTTP_USER_AGENT} ^2icommerce [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Accoona [OR]
+RewriteCond %{HTTP_USER_AGENT} ^ActiveTouristBot [OR]
+RewriteCond %{HTTP_USER_AGENT} ^addressendeutshland
+RewriteRule ^.* - [F,L]
+</IfModule>
+# Mengaktifkan caching untuk static resources selama 1 tahun, berdasarkan rekomendasi dari Google
+<IfModule mod_expires.c>
+ExpiresActive On
+<FilesMatch "\.(flv|ico|pdf|avi|mov|ppt|doc|mp3|wmv|wav|js|css|gif|jpg|jpeg|png|swf)$">
+ExpiresDefault A29030400
+</FilesMatch>
+</IfModule>
+# Enable gzip compression
+<ifModule mod_gzip.c>
+mod_gzip_on Yes
+mod_gzip_dechunk Yes
+mod_gzip_item_include file \.(html?|txt|css|js|php|pl)$
+mod_gzip_item_include handler ^cgi-script$
+mod_gzip_item_include mime ^text/.*
+mod_gzip_item_include mime ^application/x-javascript.*
+mod_gzip_item_exclude mime ^image/.*
+mod_gzip_item_exclude rspheader ^Content-Encoding:.*gzip.*
+</ifModule>
+#Disable Directory Indexes
+Options -Indexes
+#Tolak akses Malicious IPs
+order allow,deny
+deny from 1.1.1.1
+allow from all
+
+
+
+## EXPIRES CACHING ##
+&lt;IfModule mod_expires.c&gt;
+ExpiresActive On
+ExpiresByType image/jpg "access plus 1 year"
+ExpiresByType image/jpeg "access plus 1 year"
+ExpiresByType image/gif "access plus 1 year"
+ExpiresByType image/png "access plus 1 year"
+ExpiresByType text/css "access plus 1 month"
+ExpiresByType application/pdf "access plus 1 month"
+ExpiresByType text/x-javascript "access plus 1 month"
+ExpiresByType application/x-shockwave-flash "access plus 1 month"
+ExpiresByType image/x-icon "access plus 1 year"
+ExpiresDefault "access plus 7 days"
+&lt;/IfModule&gt;
+## EXPIRES CACHING ##
+
+
+
+#Reformat ETAG
+FileETag MTime Size
+
+#Cache-control Header - HTTP 1.1
+<IfModule mod_headers.c>
+	#Cache 1 Minggu
+	<FilesMatch "\.(html|htm)$">
+		Header set Cache-control "max-age:604800"
+	</FilesMatch>
+
+	#Cache 3 Bulan
+	<FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|swf)$">
+		Header set Cache-Control "max-age=5184000"
+	</FilesMatch>
+
+	#Cache 1 Bulan
+	<FilesMatch "\.(js|css)$">
+		Header set Cache-Control "max-age=2592000"
+	</FilesMatch>
+</IfModule>
+
+
+
+#Expires Header - HTTP 1.0
+<IfModule mod_expires.c>
+	ExpiresActive on
+	ExpiresDefault "access"
+	ExpiresByType image/gif "access plus 1 month"
+	ExpiresByType image/png "access plus 1 month"
+	ExpiresByType image/jpg "access plus 1 month"
+	ExpiresByType image/jpeg "access plus 1 month"
+	ExpiresByType video/mp4 "access plus 1 month"
+	ExpiresByType video/webm "access plus 1 month"
+
+	ExpiresByType text/html "modification plus 1 weeks"
+
+	ExpiresByType text/css "access plus 1 month"
+	ExpiresByType text/javascript "access plus 1 month"
+	ExpiresByType application/javascript "access plus 1 month"
+</IfModule>
+
+
+
+<IfModule mod_headers.c>
+	Header set Cache-control "no-store"
+	Header set Pragma "no-cache"
+	Header set Expires "-1"
+</IfModule>
+
+
+<IfModule mod_filter.c>
+<IfModule mod_deflate.c>
+AddOutputFilterByType DEFLATE "application/atom+xml" \
+"application/javascript" \
+"application/json" \
+"application/ld+json" \
+"application/manifest+json" \
+"application/rdf+xml" \
+"application/rss+xml" \
+"application/schema+json" \
+"application/vnd.geo+json" \
+"application/vnd.ms-fontobject" \
+"application/x-font-ttf" \
+"application/x-javascript" \
+"application/x-web-app-manifest+json" \
+"application/xhtml+xml" \
+"application/xml" \
+"font/eot" \
+"font/opentype" \
+"image/bmp" \
+"image/svg+xml" \
+"image/vnd.microsoft.icon" \
+"image/x-icon" \
+"text/cache-manifest" \
+"text/css" \
+"text/html" \
+"text/javascript" \
+"text/plain" \
+"text/vcard" \
+"text/vnd.rim.location.xloc" \
+"text/vtt" \
+"text/x-component" \
+"text/x-cross-domain-policy" \
+"text/xml"
+</IfModule>
+</IfModule>
+
+
+
+
+
+
+<IfModule mod_deflate.c>
+  # Compress HTML, CSS, JavaScript, Text, XML and fonts
+  AddOutputFilterByType DEFLATE application/javascript
+  AddOutputFilterByType DEFLATE application/rss+xml
+  AddOutputFilterByType DEFLATE application/vnd.ms-fontobject
+  AddOutputFilterByType DEFLATE application/x-font
+  AddOutputFilterByType DEFLATE application/x-font-opentype
+  AddOutputFilterByType DEFLATE application/x-font-otf
+  AddOutputFilterByType DEFLATE application/x-font-truetype
+  AddOutputFilterByType DEFLATE application/x-font-ttf
+  AddOutputFilterByType DEFLATE application/x-javascript
+  AddOutputFilterByType DEFLATE application/xhtml+xml
+  AddOutputFilterByType DEFLATE application/xml
+  AddOutputFilterByType DEFLATE font/opentype
+  AddOutputFilterByType DEFLATE font/otf
+  AddOutputFilterByType DEFLATE font/ttf
+  AddOutputFilterByType DEFLATE image/svg+xml
+  AddOutputFilterByType DEFLATE image/x-icon
+  AddOutputFilterByType DEFLATE text/css
+  AddOutputFilterByType DEFLATE text/html
+  AddOutputFilterByType DEFLATE text/javascript
+  AddOutputFilterByType DEFLATE text/plain
+  AddOutputFilterByType DEFLATE text/xml
+
+  # Remove browser bugs (only needed for really old browsers)
+  BrowserMatch ^Mozilla/4 gzip-only-text/html
+  BrowserMatch ^Mozilla/4\.0[678] no-gzip
+  BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+  Header append Vary User-Agent
+</IfModule>
+
+<IfModule mod_headers.c>
+ Header set Connection keep-alive
+ </IfModule>
+ 
+ 
+ 
+ <Directory /var/www/html/>
+   <IfModule mod_mime.c>
+	AddType application/x-javascript .js
+	AddType text/css .css
+   </IfModule>
+   <IfModule mod_deflate.c>
+	AddOutputFilterByType DEFLATE text/css application/x-javascript text/x-component text/html text/plain text/xml application/javascript
+	<IfModule mod_setenvif.c>
+		BrowserMatch ^Mozilla/4 gzip-only-text/html
+		BrowserMatch ^Mozilla/4.0[678] no-gzip
+		BrowserMatch bMSIE !no-gzip !gzip-only-text/html
+	</IfModule>
+    </IfModule>
+    Header append Vary User-Agent env=!dont-vary
+</Directory>
+
+
+<ifModule mod_gzip.c>
+
+mod_gzip_on Yes
+
+mod_gzip_dechunk Yes
+
+mod_gzip_item_include file .(html?|txt|css|js|php|pl)$
+
+mod_gzip_item_include handler ^cgi-script$
+
+mod_gzip_item_include mime ^text/.*
+
+mod_gzip_item_include mime ^application/x-javascript.*
+
+mod_gzip_item_exclude mime ^image/.*
+
+mod_gzip_item_exclude rspheader ^Content-Encoding:.*gzip.*
+
+</ifModule>

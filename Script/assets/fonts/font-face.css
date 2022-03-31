@@ -1,0 +1,15 @@
+/* --------------- Armata & K2D font face --------------- */
+/* Regular */
+@font-face {
+    font-family: 'armata';
+    src: url("Armata/Armata-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'K2D';
+    src: url("K2D/K2D-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}

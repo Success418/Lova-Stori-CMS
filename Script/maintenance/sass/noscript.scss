@@ -1,0 +1,32 @@
+@import 'libs/vars';
+@import 'libs/functions';
+@import 'libs/mixins';
+@import 'libs/vendor';
+@import 'libs/breakpoints';
+@import 'libs/html-grid';
+
+/*
+	Design by Bian Dinnurjand
+	bian.id | @mybianid
+	Webiste ini di design oleh Bian Dinnurjand dengan versi 6.0 lisensi (bian.id)
+*/
+
+/* Header */
+
+	#header {
+		body.is-preload & {
+			.content {
+				@include vendor('transform', 'none');
+				opacity: 1;
+			}
+
+			.image {
+				@include vendor('transform', 'none');
+				opacity: 1;
+
+				img {
+					opacity: 1;
+				}
+			}
+		}
+	}

@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+	<meta name="robots" content="noindex, nofollow">
+	<title>Documentation</title>
+	<link rel="icon" href="assets/images/favicon.ico">
+	<link rel="stylesheet" href="assets/frameworks/semantic-ui-2.4.1/semantic.min.css">
+	<link rel="stylesheet" href="assets/css/spacing.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+	<div class="ui main container pusher">
+		<div class="ui celled grid m-0">
+
+			<div class="row content p-0">
+
+				<div class="column p-3 l-side" id="l-side">
+					<div class="ui basic left aligned segment">
+						<a href="/documentation"><h2 class="m-0"><span>Stori</span><br>Documentation</h2></a>
+					</div>
+
+					<div id="left-menu">
+						<div class="ui fluid vertical menu">
+							<div class="ui item">
+								<a class="header" href="#system-requirements">
+									System requirements
+								</a>
+							</div>
+							
+							<div class="ui item">
+								<a class="header" href="#installation">
+									Installation
+								</a>
+							</div>
+							
+							<div class="ui item">
+								<a class="header" href="#settings">
+									Website settings
+								</a>
+							</div>
+
+							<div class="ui item">
+								<a class="header" href="#dashboard">
+									Dashboard
+								</a>
+							</div>
+							
+							<div class="ui item">
+								<a class="header" href="#posts">
+									Posts
+								</a>
+							</div>
+
+							<div class="ui item">
+								<a class="header" href="#pages">
+									Pages
+								</a>
+							</div>
+
+							<div class="ui item">
+								<a class="header" href="#users">
+									Users
+								</a>
+							</div>
+
+							<div class="ui item">
+								<a class="header" href="#categories">
+									Categories
+								</a>
+							</div>
+
+							<div class="ui item">
+								<a class="header" href="#newsletter">
+									Newsletter
+								</a>
+							</div>
+
+							<div class="ui item">
+								<a class="header" href="#trash">
+									Trash
+								</a>
+							</div>
+
+							<div class="ui item">
+								<a class="header" href="#profile">
+									Profile
+								</a>
+							</div>
+							
+							<div class="ui item">
+								<a class="header" href="#sitemap">
+									Sitemap
+								</a>
+							</div>
+
+							<div class="ui item">
+								<a class="header" href="#css">
+									CSS & SASS files
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="column r-side p-3" id="r-side">
+					<div id="page">
+						<div class="tab">
+							<div class="ui top attached tabular menu">
+								<div class="active item" id="system-requirements">
+									<h3>System requirements</h3>
+								</div>
+							</div>
+
+							<div class="ui bottom attached segment borderless">
+								<div class="ui list">
+									<div class="item">
+										<i class="right triangle icon"></i>
+										<div class="content">
+											<div class="description">PHP >= 7.2.0</div>
+										</div>
+									</div>
+									<div class="item">
+										<i class="right triangle icon"></i>
+										<div class="content">
+											<div class="description">mod_rewrite module enabled</div>
+										</div>
+									</div>
+									<div class="item">
+										<i class="right triangle icon"></i>
+										<div class="content">
+											<div class="description">OpenSSL extension</div>
+										</div>
+									</div>
+									<div class="item">
+										<i class="right triangle icon"></i>
+										<div class="content">
+											<div class="description">intl extension</div>
+										</div>
+									</div>
+									<div class="item">
+										<i class="right triangle icon"></i>
+										<div class="content">
+											<div class="description">cURL extension</div>
+										</div>
+									</div>
+									<div class="item">
+										<i class="right triangle icon"></i>
+										<div class="content">
+											<div class="description">mbstring extension</div>
+										</div>
+									</div>
+									<div class="item">
+										<i class="right triangle icon"></i>
+										<div class="content">
+											<div class="description">MySQL >= 5.6</div>
+										</div>
+									</div>
+									<div class="item">
+										<i class="right triangle icon"></i>
+										<div class="content">
+											<div class="description">mysqli PHP extension</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+							
+						<div class="ui fluid divider"></div>
+
+						<div class="tab">
+							<div class="ui top attached tabular menu">
+								<a class="active item" id="installation">
+									<h3>Installation</h3>
+								</a>
+							</div>
+
+							<div class="ui bottom attached segment borderless">
+								<p>Download and extract the zipped package to your web host server, generally in 'public_html' folder (in case you want to use an addon domain instead of the main one, you should extract it in the addon domain's folder).</p>
+
+								<p>Once you're done with that, you can start the installation by openning your website via the address bar (www.example.com).</p>
+
+								<h4>Step 1: Database</h4>
+
+								<strong>- Create a database via your hosting cPanel :</strong>
+								<br><br>
+
+								<img src="assets/images/create_db_1.jpg">
+
+								<div class="ui hidden divider mt-0"></div>
+
+								<img src="assets/images/create_db_2.jpg">
+									
+								<br><br>
+								<strong>- Create a user for your database :</strong>
+								<br><br>
+
+								<img src="assets/images/create_user.jpg">
+								
+								<br><br>
+								<strong>- Add user to database :</strong>
+								<br><br>
+
+								<img src="assets/images/add_user_to_db.jpg">
+								
+								<br><br>
+								<strong>- Database installation (via www.your_domain_name.com) :</strong>
+								<br><br>
+
+								<img src="assets/images/db_install.jpg">
+								
+								<br><br>
+								- Hostname : as shown in the form, it's generally either 'localhost' or '127.0.0.1'.<br>
+								- Username : the username you have given to the user you just created for the database.<br>
+								- Password : the password you have given for the user mentionned above.<br>
+								- Database : the name you have given to the database you just created.
+								
+								<br><br>
+								<h4>Step 2: Site config</h4>
+								<img src="assets/images/site_conf.jpg">
+								<br><br>
+								
+								- NB: You can edit that later from website's administration.
+								
+								<br><br>
+								<h4>Step 3: Maxmind GeoLite2-City Download Link</h4>
+								1. Create a Mixmind account <a href="https://www.maxmind.com/" target="_blank">HERE</a><br>
+								2. Login to your said Mixmind account<br>
+								3. On the left menu, underneath "GeoIP2", click on "Download Files"<br>
+								4. On "Download Databases", copy the 'GeoLite2-City' GZIP download link (Right click / Copy link address)<br>
+								5. Paste that download link in 'Maxmind GeoLite2-City Download Link' field<br>
+								6. Continue the installation<br>
+
+								<br><br>
+								<h4>Step 4: Admin credentials</h4>
+								<img src="assets/images/admin_credentials.jpg">
+								<br><br>
+
+								- A username, email and a password to access the website's administration.
+								<br><br>
+								- NB: remember that the administration is accessible through 'www.your_domain_name.com/<strong>control</strong>'.
+							</div>
+						</div>
+
+						<div class="ui fluid divider"></div>
+
+						<div class="tab">
+							<div class="ui top attached tabular menu">
+								<div class="active item" id="settings">
+									<h3>Website settings</h3>
+								</div>
+							</div>
+
+							<div class="ui bottom attached segment borderless">
+								<h4>General</h4>
+								
+								- <strong>Posts / page</strong> : the number of posts to show per page.<br>
+								- <strong>Favicon</strong> : the icon shown on the browser's tab.<br>
+								- <strong>Comments moderation</strong>: either to activate 'Approval' for comments or not.<br>
+								- <strong>Show posts authors</strong> : show the post's author for every post in posts pages.<br>
+								- <strong>Show post author</strong> : show the post's author details in the post's inner page.<br>
+								- <strong>Show at</strong> : either to show the author details mentionned above at the bottom or the top of the page.
+
+								<h4>Search engines</h4>
+								
+								<strong>- Google site verification</strong>
+								<p>The string verification you get from <a href="https://search.google.com/search-console/about" target="_blank">Google Search Console</a>.</p>
+								<p>Support : <a href="https://support.google.com/webmasters/answer/9008080?hl=en">https://support.google.com/webmasters/answer/9008080?hl=en</a>.</p>
+
+								<p>&lt;meta name="google-site-verification" content="YOUR_VERIFICATION_STRING"&gt;</p>
+
+								<strong>- Bing site verification</strong>
+								<p>The string verification you get from <a href="https://www.bing.com/toolbox/webmaster" target="_blank">Bing - Webmaster Tools</a>.</p>
+
+								<p>&lt;meta name="msvalidate.01" content="YOUR_VERIFICATION_STRING"&gt;</p>
+
+								<strong>- Yandex site verification</strong>
+								<p>The string verification you get from <a href="https://webmaster.yandex.com/" target="_blank">Yandex.Webmaster</a>.</p>
+
+								<p>&lt;meta name="yandex-verification" content="YOUR_VERIFICATION_STRING"&gt;</p>
+
+								<strong>- Google analytics</strong>
+								<p>The code you get from <a href="https://analytics.google.com/analytics/web/" target="_blank">https://analytics.google.com/analytics/web/</a></p>
+
+								<p>
+									Support:<br>
+									<a href="https://support.google.com/analytics/answer/1009694?hl=en">https://support.google.com/analytics/answer/1009694?hl=en</a><br>
+									<a href="https://support.google.com/analytics/answer/1042508?hl=en">https://support.google.com/analytics/answer/1042508?hl=en</a>
+								</p>
+
+								<strong>- Robots</strong>
+								<p><a href="https://developers.google.com/search/reference/robots_meta_tag#valid-indexing--serving-directives" target="_blank">https://developers.google.com/search/reference/robots_meta_tag#valid-indexing--serving-directives</a></p>
+								
+								<h4>Advertisement</h4>
+
+								<strong>- Popup</strong>
+								<p>Popup ads code that you get from popup ads companies like 'Popads', 'Popcash' ...etc.</p>
+								<p>Note: you can put multiple codes in this field if you want to use multiple popup ads companies.</p>
+
+								<h4>Email</h4>
+								<p>To send and receive emails you can either use your hosting email account, or your gmail.</p>
+
+								<strong>- Hosting email account</strong>
+								<p>In your hosting cPanel click on 'Email accounts'</p>
+
+								<img src="assets/images/email_accounts.jpg">
+
+								<p>Then, click on 'Connect devices' then 'Set Up Mail Client'</p>
+
+								<img src="assets/images/email_account_set_up.jpg">
+								<br>
+
+								<p>Scroll down to 'Mail Client Manual Settings'.</p>
+
+								<br>
+								<img src="assets/images/email_account_manual_set.jpg">
+								
+								<p>Encryption : 'ssl' or 'tls' whether you opted for the SSL email's settings (Secure SSL/TLS Settings (Recommended)) or 'TLS' email's settings (Non-SSL Settings (NOT Recommended)).</p>
+								<p>Note: the password is the same as the one you use to connect to your cPanel.</p>
+
+								<h4>Permissions</h4>
+								<p>Here you can attribute permissions to your users (authors, moderators and sub-administrators).</p>
+
+								<p><strong>GET</strong>: gives user permission to only see the list of items (post, pages, subscribers, comments ...etc.)</p>
+								<p><strong>ADD</strong>: gives user permission to add items (post, page, category ...etc.)</p>
+								<p><strong>DELETE</strong>: gives user permission to delete items. (Know that items deleted  are moved to TRASH and once removed from the TRASH you won't be able to restore them.)</p>
+								<p><strong>UPDATE</strong>: gives user permission to update items. (there are some items having several options on what to update, for a post eg, there is 'published', 'pinned' and 'recommended' status and ALL means all of them).</p>
+							</div>
+						</div>
+							
+						<div class="ui hidden divider"></div>
+
+						<div class="tab">
+							<div class="ui top attached tabular menu">
+								<div class="active item" id="dashboard">
+									<h3>Dashboard</h3>
+								</div>
+							</div>
+
+							<div class="ui bottom attached segment borderless">
+								<h4>Daily visits chart</h4>
+								<img src="assets/images/dashboard_daily_visits.jpg">
+								<br>
+
+								<p><strong>- Dropdown menu : </strong>allows you to get previous months visits.</p>
+								<p><strong>- Sync icon : </strong>allows you to refresh the chart's data without refreshing the page, so if you click on it, the new visits will be counted too.</p>
+								<p><strong>- Unique visits : </strong>means multiple visits from the same ip address are counted just once.</p>
+								<p><strong>- Non unique visits : </strong>means multiple visits from the same ip address are counted too.</p>
+								<p><strong>- Total visits : </strong> shows the total visits since the first day.</p>
+
+								<h4>Most visited pages</h4>
+								<img src="assets/images/dashboard_most_visited_pages.jpg">
+								<br>
+
+								<p>This table shows the most interesting 20 pages for visitors.</p>
+
+								<h4>Traffic origin map</h4>
+								<img src="assets/images/dashboard_traffic_origin.jpg">
+								<br>
+
+								<p>This tab shows the traffic by country as well as the 5 countries from where you are getting the most important traffic.</p>
+
+								<h4>Web Robots Scraper</h4>
+								<img src="assets/images/dashboard_web_robots_scraper.jpg">
+								<br>
+
+								<p>This table shows the robots that are viewing your website (non-humain visits just like googleBot).</p>
+
+								<h4>Browsers, Screen Sizes and Operating Systems</h4>
+								<img src="assets/images/dashboard_device_details.jpg">
+								<br>
+
+								<p>Those tables show respectively, the browser (aka navigator), the screen size and the operating system (android, ios, windows ...etc.) the visitor's device has.</p>
+							</div>
+						</div>
+
+						<div class="ui fluid divider"></div>
+
+						<div class="tab">
+							<div class="ui top attached tabular menu">
+								<div class="active item" id="posts">
+									<h3>Posts</h3>
+								</div>
+							</div>
+
+							<div class="ui bottom attached segment borderless">
+								<h4>Posts list</h4>
+								<img src="assets/images/posts_list.jpg">
+								<br><br>
+
+								<p><strong>- Ordering : </strong> you can order posts by title (alphabetically), views, date, published status, pinned status or recommended status and finally get only posts belonging to a certain category.</p>
+								<p><strong>- Published status : </strong> this makes a post visible or invisible for visitors.</p>
+								<p><strong>- Pinned status : </strong>this makes a post shows first even if it's an old one.</p>
+								<p><strong>- Recommended status : </strong>this shows a post in 'Recommended posts' list in your website.</p>
+								<p><strong>- Edit : </strong>to edit a post you need to check the corresponding checkbox then 'Edit' button will be enabled and you can start editing that post by clicking that button.</p>
+								<p><strong>- Delete : </strong>to delete a post or multiple ones you need to check the corresponding checkbox and then click 'Delete ' button.</p>
+								<p><strong>- Search : </strong>to search for a post, type some keywords in the search field then click on search icon or hit Enter on your keyboard.</p>
+							</div>
+						</div>
+							
+						<div class="ui fluid divider"></div>
+
+						<div class="tab">
+							<div class="ui top attached tabular menu">
+								<div class="active item" id="pages">
+									<h3>Pages</h3>
+								</div>
+							</div>
+
+							<div class="ui bottom attached segment borderless">
+								<h4>Add page</h4>
+								<p><strong>- Show in : </strong>this makes you page title visible on the main menu or in the footer or both.</p>
+
+								<h4>Pages list</h4>
+								<img src="assets/images/pages_list.jpg">
+								<br><br>
+
+								<p><strong>- Ordering : </strong> you can order pages by title (alphabetically), views, date, visible status and finally get pages by author.</p>
+								<p><strong>- Visible status : </strong> this makes a page visible or invisible for visitors.</p>
+								<p><strong>- Edit : </strong>to edit a page you need to check the corresponding checkbox then 'Edit' button will be enabled and you can start editing that page by clicking that button.</p>
+								<p><strong>- Delete : </strong>to delete a page or multiple ones you need to check the corresponding checkbox and then click 'Delete ' button.</p>
+								<p><strong>- Search : </strong>to search for a page, type some keywords in the search field then click on search icon or hit Enter on your keyboard.</p>
+							</div>
+						</div>
+						
+						<div class="ui fluid divider"></div>
+
+						<div class="tab">
+							<div class="ui top attached tabular menu">
+								<div class="active item" id="users">
+									<h3>Users</h3>
+								</div>
+							</div>
+
+							<div class="ui bottom attached segment borderless">
+								<p><strong>Note :</strong> administrators cannot delete administrators.</p>
+								<p><strong>Note :</strong> moderators cannot delete moderators & administrators.</p>
+								
+								<h4>Users list</h4>
+								<p><strong>- Ordering : </strong> you can order users by username, email, country, date, active status, blocked status and count of created posts.</p>
+								<p><strong>- Permissions : </strong> changing permissions is done via Settings/Permissions, you can either allow users (admins, authors and moderators) to access and/or edit settings or not.</p>
+								<p><strong>- Add : </strong>this option requires 'add' permission for users.</p>
+								<p><strong>- Update : </strong>this one has four options, update 'blocked status', 'active status', 'role', 'all'.<br><span class="px-3"></span>Roles : administrator, author, moderator, member.<br><span class="px-3"></span>All : means user can update all about others.</p>
+							</div>
+						</div>
+						
+						<div class="ui fluid divider"></div>
+
+						<div class="tab">
+							<div class="ui top attached tabular menu">
+								<div class="active item" id="categories">
+									<h3>Categories</h3>
+								</div>
+							</div>
+
+							<div class="ui bottom attached segment borderless">
+								<h4>Categories list</h4>
+								<img src="assets/images/categories.jpg">
+								<br><br>
+
+								<p><strong>- Ordering : </strong>you can order categories by name, order, date, active and visible status.</p>
+								<p><strong>- Visible status : </strong>this makes a category visible or not in your website (menu).</p>
+
+								<h4>Editing categories</h4>
+								<p>To edit a category you just check its corresponding checkbox (you can only edit one category at a time) then you click 'Edit' button.</p>
+
+								<h4>Deleting categories</h4>
+								<p>To delete a category or multiple ones, select them (checkboxes), then click on 'Delete' button.</p>
+
+								<h4>Adding categories</h4>
+								<p>To add a category click on 'Add' button.</p>
+							</div>
+						</div>
+						
+						<div class="ui fluid divider"></div>
+
+						<div class="tab">
+							<div class="ui top attached tabular menu">
+								<div class="active item" id="newsletter">
+									<h3>Newsletter</h3>
+								</div>
+							</div>
+
+							<div class="ui bottom attached segment borderless">
+								<img src="assets/images/newsletter.jpg">								
+								<h4>Sending a newsletter</h4>
+								<p><strong>- Subject : </strong>a subject for the newsletter.</p>
+								<p><strong>- Send to : </strong>you can either specify a list of email addresses (email1, email2, email3, ...) to whom you want to send the newsletter or leave that field empty to send it to all subscribers.</p>
+								<p><strong>- Content : </strong>the newsletter content.</p>
+							</div>
+						</div>
+						
+						<div class="ui fluid divider"></div>
+
+						<div class="tab">
+							<div class="ui top attached tabular menu">
+								<div class="active item" id="trash">
+									<h3>Trash</h3>
+								</div>
+							</div>
+
+							<div class="ui bottom attached segment borderless">
+								<h4>Trash / item's type</h4>
+								<p>There are two main options for every item's type, 'Restore' to restore what has been deleted, and 'Delete' to remove what has been deleted definitively (this action is irreversible).</p>
+							</div>
+						</div>
+
+						<div class="ui fluid divider"></div>
+
+						<div class="tab">
+							<div class="ui top attached tabular menu">
+								<div class="active item" id="profile">
+									<h3>Profile</h3>
+								</div>
+							</div>
+
+							<div class="ui bottom attached segment borderless">
+								<img src="assets/images/profile.jpg">
+								<br><br>
+
+								<p>Everything about your profile, you name, country, address, phone, email, password, day of birth, twitter, linkedin, youtube chanel ...</p>
+								<p><strong>Note : </strong>To update your profile picture, click on the picture itself.</p>
+							</div>
+						</div>
+
+						<div class="ui fluid divider"></div>
+
+						<div class="tab">
+							<div class="ui top attached tabular menu">
+								<div class="active item" id="sitemap">
+									<h3>Sitemap</h3>
+								</div>
+							</div>
+
+							<div class="ui bottom attached segment borderless">
+								<img src="assets/images/sitemaps.jpg">
+								<br><br>
+								<p>Here you can 'Read', 'Download' and 'Generate' your sitemaps.</p>
+								<p><strong>Note : </strong>Sitemaps are updated automatically on every post, page, category, subcategory you create or update, that said, you don't need to generate a sitemap from here unless your sitemap files have been deleted or corrupt.</p>
+							</div>
+						</div>
+
+						<div class="ui fluid divider"></div>
+
+						<div class="tab">
+							<div class="ui top attached tabular menu">
+								<div class="active item" id="css">
+									<h3>CSS & SASS files</h3>
+								</div>
+							</div>
+
+							<div class="ui bottom attached segment borderless">
+								<div class="mb-3"><strong>Files structure :</strong></div>
+								<code style="background: tomato;">
+									assets/css/light.css
+									<br>
+									assets/css/dark.css
+								</code>
+								<code>
+									assets/sass/light.scss
+									<br>
+									assets/sass/dark.scss
+								</code>
+								<code style="background: tomato;">
+									control/assets/css/light.css
+									<br>
+									control/assets/css/dark.css
+								</code>
+								<code>
+									control/assets/sass/light.scss
+									<br>
+									control/assets/sass/dark.scss
+								</code>
+
+								<div class="my-3"></div>
+
+								<p><strong>Note : </strong>By default the script uses SASS files and compiles them to CSS, if you want to use CSS files instead, you'll have to proceed to the changes below:</p>
+
+								<p><strong>-</strong> open "application/views/templates/default/partials/_head.php"</p>
+								<p><strong>-</strong> search for 'compileScss();'</p>
+								<p><strong>-</strong> remove it or comment it /* compileScss(); */ </p>
+								<p><strong>-</strong>Save the changes, close the file and that's it.</p>
+								<p>The same thing applies for "application/views/control/includes/_head.php", if you want to use CSS files in the control (admnistration) area.</p><br>
+								<p>For assistance, you can contact us via email <b>medialova.com@gmail.com</b></p>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="ui fluid hidden divider mt-5 mb-0"></div>
+
+
+					<div class="footer">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>

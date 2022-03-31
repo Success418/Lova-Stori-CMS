@@ -1,0 +1,46 @@
+.sal-box{margin: 0;padding: 0;border: 0;font: inherit;vertical-align: baseline;-webkit-tap-highlight-color: transparent;font-family: 'Roboto',Segoe UI,Segoe,Arial,Verdana,sans-serif;}
+.sal-box > .item {display: block;float: left;position: relative;width: 100%;margin-bottom: 10px;background: #fff;}
+.addon-apps {margin-bottom: 15px;padding: 5px 0;}
+.addon-apps .apps-detail a {border-bottom: 1px solid transparent;}
+.addon-apps .apps-detail a:hover {border-bottom: 1px solid #999999;}
+.addon-apps .apps-detail.horizontal.xlSz {border: 0;padding: 15px 20px;}
+.addon-apps .apps-detail.horizontal.xlSz .property {max-height: none;margin: 0;}
+.addon-apps .apps-detail.horizontal.xlSz .info-container {padding: 0 15px;margin: 0;}
+.addon-apps .apps-detail .note a, .addon-apps .apps-detail .note span {vertical-align: middle;}
+.addon-apps .item {overflow: hidden;-webkit-border-radius: 4px;-moz-border-radius: 4px;border-radius: 4px;}
+.addon-discover {position: absolute;bottom: 0;right: 0;padding: 2px 10px;background: #f8f8f8;line-height: 0;border-top: 1px solid #dddddd;border-left: 1px solid #dddddd;-webkit-border-top-left-radius: 4px;-moz-border-radius-topleft: 4px;border-top-left-radius: 4px;}
+.apps-detail.horizontal.xlSz {padding: 1.5%;}
+.apps-detail.horizontal .os-icon {margin-right: 6px;}
+.apps-detail.horizontal {display: block;align-items: center;}
+.apps-detail.horizontal.xlSz .property {margin: 5px 0 10px 0;}
+.apps-detail.horizontal.xlSz .action-btn:last-of-type {margin-bottom: 0;}
+.apps-detail.horizontal.xlSz .action-btn {width: 100%;margin-bottom: 5px;}
+.apps-detail.horizontal {position: relative;width: 100%;}
+.apps-detail.horizontal.xlSz .info-container {margin: 2px 0 0 0;padding: 0 1.5%;}
+.apps-detail.horizontal.xlSz .action-container {margin-bottom: 15px;padding: 5px 0;float: right;padding-right: 75px;}
+.apps-detail {float: left;border: 1px solid rgba(255,255,255,0);-webkit-border-radius: 4px;-moz-border-radius: 4px;border-radius: 4px;}
+.trs, .trs:before, .trs:after {-webkit-transition: all 0.15s ease-in-out;-moz-transition: all 0.15s ease-in-out;transition: all 0.15s ease-in-out;}
+.apps-detail.horizontal .cover-container, .apps-detail.horizontal .info-container, .apps-detail.horizontal .action-container {position: relative;float: left;vertical-align: top;}
+.title-text.dllight {font-size: 16px;}
+.title-text.lSz {font-size: 20px;line-height: 28px;}
+.title-text {font-size: 14px;line-height: 20px;font-weight: 700;}
+.text-link {border-bottom: 1px solid rgba(255,255,255,0);color: grey;}
+.cover {position: relative;overflow: hidden;}
+.btn.bdrs4 {-webkit-border-radius: 4px;-moz-border-radius: 4px;border-radius: 4px;}
+.btn.clearBlue {background-color: #DF0056;border: 1px solid rgba(0,0,0,0);color: #ffffff;}
+.btn.clearGreen {background-color: #6F16F5;border: 1px solid rgba(0,0,0,0);color: #ffffff;}
+.btn.dllight {height: 40px;line-height: 38px;padding: 0 20px;font-size: 15px;}
+.btn {display: inline-block;overflow: hidden;vertical-align: middle;padding: 0 10px;border: 1px solid #eeeeee;background: #ffffff;color: #DF0056;text-align: center;cursor: pointer;}
+.trs, .trs:before, .trs:after {-webkit-transition: all 0.15s ease-in-out;-moz-transition: all 0.15s ease-in-out;transition: all 0.15s ease-in-out;}
+a {text-decoration: none;}
+.text-link.cl1 {color: #252525;}
+.fs2 {font-family: 'Roboto',Segoe UI,Segoe,Arial,Verdana,sans-serif;}
+.multi-ellipsis {overflow: hidden;position: relative;}
+.text-ellipsis {white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+.content-format a:hover {border-bottom: 1px solid #DF0056;}
+.content-format .note a:hover {border-bottom: 1px solid grey;}
+.content-format a {color: grey;border-bottom: 1px solid rgba(255,255,255,0);}
+.content-format a, .content-format a:before, .content-format a:after {-webkit-transition: all 0.15s ease-in-out;-moz-transition: all 0.15s ease-in-out;
+transition: all 0.15s ease-in-out;}
+.os-icon {overflow: hidden;display: inline-block;vertical-align: middle;width: 20px;height: 20px;background-image: url(https://sites.google.com/site/sotazone/device.png);background-repeat: no-repeat;background-size: 100%;-webkit-border-radius: 50%;-moz-border-radius: 50%;border-radius: 50%;}
+.os-style.android {background-color: #6F16F5;background-position: 0 0;} 

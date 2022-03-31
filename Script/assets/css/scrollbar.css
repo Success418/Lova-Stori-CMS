@@ -1,0 +1,50 @@
+.breadcrumb, 
+.dimmer.modals, 
+#l-menu-popup, 
+#mobile-menu, 
+#l-side, 
+#r-side, 
+#r-side-last, 
+.posts-cards .description, 
+#r-side .author .item, 
+#r-side .author .about, 
+#post-extra > .menu, 
+#similar-posts .description, 
+#authors .container, 
+#author-data .segment,
+#left-menu,
+#mobile-menu .items,
+#share-buttons .ui.menu,
+.footer .ui.text.menu.stackable,
+#top-carousel .slick-slide a,
+#tabs-wrapper .tabular.menu,
+.ad-link
+{
+	-ms-overflow-style: none !important;
+	-moz-overflow-style: none !important;
+	scrollbar-width: none !important;
+}
+.breadcrumb::-webkit-scrollbar, 
+.dimmer.modals::-webkit-scrollbar, 
+#l-menu-popup::-webkit-scrollbar, 
+#mobile-menu::-webkit-scrollbar, 
+#l-side::-webkit-scrollbar, 
+#r-side::-webkit-scrollbar, 
+#r-side-last::-webkit-scrollbar, 
+.posts-cards .description::-webkit-scrollbar, 
+#r-side .author .item::-webkit-scrollbar, 
+#r-side .author .abou::-webkit-scrollbart, 
+#post-extra > .menu::-webkit-scrollbar, 
+#similar-posts .description::-webkit-scrollbar, 
+#authors .container::-webkit-scrollbar, 
+#author-data .segment::-webkit-scrollbar,
+#left-menu::-webkit-scrollbar,
+#mobile-menu .items::-webkit-scrollbar,
+#share-buttons .ui.menu::-webkit-scrollbar,
+.footer .ui.text.menu.stackable::-webkit-scrollbar,
+#top-carousel .slick-slide a::-webkit-scrollbar,
+#tabs-wrapper .tabular.menu::-webkit-scrollbar,
+.ad-link::-webkit-scrollbar
+{
+	display: none !important;
+}
